@@ -1,0 +1,24 @@
+* {
+  color: black;
+}
+h1 {
+  font-family: 'Merriweather', serif;
+}
+body {
+  font-size: 16px;
+}
+.text-large {
+  font-size: 150%;
+}
+#outer {
+  width: 80%;
+  margin: 0 auto;
+}
+.centre {
+  margin: 350px;
+}
+nav li {
+  list-style-type: none;
+  border: 3px solid;
+  padding: 6px;
+}
