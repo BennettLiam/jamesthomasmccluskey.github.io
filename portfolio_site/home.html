@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="scripts/jquery-3.3.1.min.js"></script>
 	<title>James' Portfolio</title>
 </head>
 <body>
@@ -11,12 +12,24 @@
 		<ul>
 			<li><a href="home.html">Home</a></li>
 			<li><a href="about.html">About</a></li>
+			<li><a href="javascript.html">Javascript</a></li>
 		</ul>
 	</nav>
 	<div id="outer">
 		<h1 class="text-large">Home</h1>
-		<img src="images/yosemite.jpg" alt="Yosemite Mountains" width=100%>
-		<em class="centre"><br />Watch this space.</em>
+		<h2>Some Nice Places</h2>
+		<div id="switcher">
+			<div id="mainImg">
+				<img src="images/yosemite.jpg" alt="Yosemite Mountains" width=100%>
+			</div>
+			<div id="thumbContainer">
+				<img class="thumb" src="images/yosemite.jpg" alt="Yosemite Mountains">
+				<img class="thumb" src="images/grand_canyon.jpg" alt="Grand Canyon">
+				<img class="thumb" src="images/venice.jpg" alt="Venice">
+			</div>
+		</div>
 	</div>
+	<script src="scripts/gallery.js"></script>
+	<script src="scripts/switcher.js"></script>
 </body>
 </html>
