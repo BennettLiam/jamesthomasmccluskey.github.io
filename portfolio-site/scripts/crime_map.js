@@ -1,5 +1,5 @@
 function preload() {
-  img = loadImage("scripts/assets/area_map.jpg", function(img) {
+  img = loadImage("https://gitlab.com/jamesthomasmccluskey/jamesthomasmccluskey/blob/master/portfolio-site/scripts/assets/area_map.jpg", function(img) {
     image(img, 0, 0);
   });
 }
