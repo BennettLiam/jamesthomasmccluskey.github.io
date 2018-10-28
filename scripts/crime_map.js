@@ -1,5 +1,5 @@
 function preload() {
-  img = loadImage("https://jamesthomasmccluskey.github.io/scripts/assets/area_map.jpg");
+  img = loadImage("scripts/assets/area_map.jpg");
 }
 function setup() {
   createCanvas(1773, 791);
