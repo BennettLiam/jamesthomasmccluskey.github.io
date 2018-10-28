@@ -1,5 +1,5 @@
 function preload() {
-  piano = loadSound("https://jamesthomasmccluskey.github.io/sounds/piano.mp3"); //Loads the sounds from an external web server and links the specified strings
+  piano = loadSound("sounds/piano.mp3"); //Loads the sounds from an external web server and links the specified strings
   guitar = loadSound("https://jamesthomasmccluskey.github.io/sounds/guitar.mp3");
   drum = loadSound("https://jamesthomasmccluskey.github.io/sounds/drum.mp3");
 }
