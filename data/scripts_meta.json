@@ -1,0 +1,32 @@
+[
+{	"_id":			"0",
+	"title":		"Animated Sinewave",
+	"created_on":	"‎Sep 30, 2018 9:26 PM",
+	"git_repo":		"git@gitlab.com:jamesthomasmccluskey/jamesthomasmccluskey.git",
+	"img_src":		"scripts/sinewave.js",
+	"language":		"javascript",
+	"link":			"https://editor.p5js.org/jamesthomasmccluskey/sketches/BkU_Z2Atm",
+	"description":	"My first experiment with the p5 graphical programming language. In this sketch I was practicing using the sine function within an if statement to draw a sine graph across a canvas.",
+	"tags":			["p5", "graphics", "maths"]
+},
+{	"_id":			"1",
+	"title":		"Crime Data Visualisation",
+	"created_on":	"Oct 17, 2018 1:04 PM",
+	"git_repo":		"git@gitlab.com:jamesthomasmccluskey/jamesthomasmccluskey.git",
+	"img_src":		"scripts/crime_map.js",
+	"language":		"javascript",
+	"link":			"https://editor.p5js.org/jamesthomasmccluskey/sketches/rkkSrsEjX",
+	"description":	"This sketch represents my first attempt at using a web API to fetch open data. The canvas pixels are mapped to geographical coordinates which are then fed into a URL to retrieve crime data on that area which is then represented in colour.",
+	"tags":			["p5", "graphics", "API", "algorithms", "data"]
+},
+{	"_id":			"2",
+	"title":		"Simple Soundboard",
+	"created_on":	"	Oct 24, 2018 11:53 AM",
+	"git_repo":		"git@gitlab.com:jamesthomasmccluskey/jamesthomasmccluskey.git",
+	"img_src":		"scripts/soundboard.js",
+	"language":		"javascript",
+	"link":			"https://editor.p5js.org/jamesthomasmccluskey/sketches/BJw710Ti7",
+	"description":	"In this sketch I loaded sound files into p5 and drew a coloured circle to represent each sound. The code queries the colour being moused over and then plays the corresponding sound.",
+	"tags":			["p5", "graphics", "soundboard"]
+}
+]
