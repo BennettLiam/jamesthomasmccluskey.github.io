@@ -1,5 +1,5 @@
 // target certain elements and store references to them in variables
-var mainImg = document.getElementById("mainImg").getElementsByTagName("img")[0];
+var mainImg = document.getElementById("mainImg");
 var thumbs = document.getElementsByClassName("thumb");
 
 // for each image of class 'thumb', attach event listener
