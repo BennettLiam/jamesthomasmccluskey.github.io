@@ -4,11 +4,11 @@ function preload() {
 function setup() {
   createCanvas(1773, 791);
   pg = createGraphics(1773, 791);
-  frameRate(3);
+  frameRate(5);
 }
 function draw() {
   pg.clear();
-  pg.ellipse(mouseX,mouseY,120,120);
+  pg.ellipse(mouseX,mouseY,40,40);
   image(img, 0, 0);
   image(pg, 0, 0);
 	var mapmousex = map(mouseX,0,1773,-1.943066,-1.338474);
@@ -22,6 +22,6 @@ function draw() {
     crimenumb = data.length;
     red = map(crimenumb,0,100,0,255);
     green = map(crimenumb,0,100,255,0);
-    pg.fill(red,green,0);
+    pg.fill(red,green,0,128);
   }
 }
