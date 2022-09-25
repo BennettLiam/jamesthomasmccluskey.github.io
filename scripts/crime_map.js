@@ -4,7 +4,7 @@ function preload() {
 function setup() {
   createCanvas(1773, 791);
   pg = createGraphics(1773, 791);
-  frameRate(10);
+  frameRate(3);
 }
 function draw() {
   pg.clear();
