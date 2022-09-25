@@ -4,14 +4,14 @@ function preload() {
 var canvasWidth = 1773;
 var canvasHeight = 791;
 function setup() {
-  createCanvas(canvasWidth, canvasHeight);
-  pg = createGraphics(canvasWidth, canvasHeight);
-  setInterval(getCrimeData, 250);
+  createCanvas(1773, 791);
+  pg = createGraphics(1773, 791);
+  frameRate(10);
 }
 
 function draw() {
   pg.clear();
-  pg.ellipse(mouseX,mouseY,60,60);
+  pg.ellipse(mouseX,mouseY,120,120);
   image(img, 0, 0);
   image(pg, 0, 0);
 
@@ -23,17 +23,13 @@ const getCrimeData = () =>{
 	var mapmousey = map(mouseY,0,canvasHeight,53.921540,53.763338);
   mapmousex = nf(mapmousex,1,6);
   mapmousey = nf(mapmousey,2,6);
-  var url = "https://data.police.uk/api/crimes-street/vehicle-crime?lat="+mapmousey+"&lng="+mapmousex+"&date=2022-01";
-  if(lastUrl!=url){
-	//loadJSON(url,gotCrimeData);
-  httpDo(url, "GET", "json", false, gotCrimeData)
-  lastUrl=url;
+	var url = "https://data.police.uk/api/crimes-street/vehicle-crime?lat="+mapmousey+"&lng="+mapmousex+"&date=2018-08";
+	loadJSON(url,gotCrimeData);
+	function gotCrimeData(data) {
+    console.log(data.length);
+    crimenumb = data.length;
+    red = map(crimenumb,0,100,0,255);
+    green = map(crimenumb,0,100,255,0);
+    pg.fill(red,green,0);
   }
-}
-
-const gotCrimeData = (data) => {
-  crimenumb = data.length;
-  red = map(crimenumb,0,100,0,255);
-  green = map(crimenumb,0,100,255,0);
-  pg.fill(red,green,0,127);
 }
