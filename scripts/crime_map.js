@@ -30,8 +30,6 @@ const getCrimeData = () =>{
 	var mapmousey = map(mouseY,0,canvasHeight,53.921540,53.763338);
   mapmousex = nf(mapmousex,1,6);
   mapmousey = nf(mapmousey,2,6);
-  console.log(mapmousex+" x")
-  console.log(mapmousey+" y")
 	var url = "https://data.police.uk/api/crimes-street/vehicle-crime?lat="+mapmousey+"&lng="+mapmousex+"&date=2022-01";
   if(lastUrl!=url){
     loadJSON(url,gotCrimeData);
