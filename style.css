@@ -1,12 +1,8 @@
-* {
-  color: white;
-}
-h1 {
-  font-family: 'Merriweather', serif;
-}
 body {
   font-size: 16px;
+  font-family: sans-serif;
   background-color: #222;
+  color: white;
 }
 nav{
   font-size: 1.5rem;
@@ -19,46 +15,70 @@ nav ul{
     display: inline-block;
 }
  nav li {
+  
   background-color: #333;
   font-family: sans-serif;
   list-style-type: none;
-  border-bottom: 3px solid;
-  border-top: 3px solid;
+  border-bottom: 3px solid wheat;
+  border-top: 3px solid wheat;
   padding: 6px;
   display: inline;
 } 
 
 nav a {
+  color: white;
   text-decoration: none;
 } 
 
-body img {
-	border: 5px solid #fff;
+nav a:hover{
+  color: #B3CAF5;
 }
 
-img.thumb {
-	float: left;
-	margin-right: 10px;
-	width: 200px;
-	height: 120px;
+body img {
+	border: 5px solid wheat;
+}
+
+.thumb {
+  margin: 0px 10px;
+  max-height: 100px;
 }
 
 .centre {
   margin: 350px;
 }
 
+.pageTitle{
+  font-family: 'Merriweather', serif;
+  color: wheat;
+  text-align: center;
+}
 
-#outer {
-  width: 80%;
+.pageText{
+  width: 90%;
+	margin: 0 auto;
+  text-align: center;
+}
+
+#canvasDiv {
+  text-align: center;
+}
+
+#canvasDiv canvas{
+  border: 5px #B3CAF5 solid;
   margin: 0 auto;
 }
 
 #switcher {
-	width: 80%;
+	text-align: center;
 	margin: 0 auto;
 }
+#thumbContainer{
+  text-align: center;
+	margin: 0 auto;
+}
+
 #mainImg {
-	width: 100%;
 	margin-bottom: 10px;
+  max-height: 65vh;
 }
 
