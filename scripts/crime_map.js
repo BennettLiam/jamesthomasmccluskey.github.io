@@ -18,7 +18,7 @@ function setup() {
 
 function draw() {
   cursorCircle.clear();
-  cursorCircle.ellipse(mouseX,mouseY,canvasWidth/mapWidthMiles,canvasWidth/mapWidthMiles);
+  cursorCircle.ellipse(mouseX,mouseY,2*canvasWidth/mapWidthMiles,2*canvasWidth/mapWidthMiles);
   image(backgroundImg, 0, 0,canvasWidth,canvasHeight);
   image(cursorCircle, 0, 0);
 }
