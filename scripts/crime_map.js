@@ -1,19 +1,26 @@
+const mapWidthMiles = 24;
+
+var canvasWidth = window.screen.availWidth*0.8;
+var canvasHeight = 0;
+
 function preload() {
-  img = loadImage("scripts/assets/area_map.jpg");
+  backgroundImg = loadImage("scripts/assets/area_map.jpg",()=>{
+    canvasHeight = canvasWidth / (backgroundImg.width/backgroundImg.height)
+  });
 }
-var canvasWidth = 1773;
-var canvasHeight = 791;
+
 function setup() {
-  createCanvas(1773, 791);
-  pg = createGraphics(1773, 791);
+  var canvas = createCanvas(canvasWidth, canvasHeight);
+  canvas.parent("canvasDiv");
+  cursorCircle = createGraphics(canvasWidth, canvasHeight);
   setInterval(getCrimeData,250);
 }
 
 function draw() {
-  pg.clear();
-  pg.ellipse(mouseX,mouseY,40,40);
-  image(img, 0, 0);
-  image(pg, 0, 0);
+  cursorCircle.clear();
+  cursorCircle.ellipse(mouseX,mouseY,canvasWidth/mapWidthMiles,canvasWidth/mapWidthMiles);
+  image(backgroundImg, 0, 0,canvasWidth,canvasHeight);
+  image(cursorCircle, 0, 0);
 }
 
 var lastUrl;
@@ -35,5 +42,5 @@ function gotCrimeData(data) {
   crimenumb = data.length;
   red = map(crimenumb,0,100,0,255);
   green = map(crimenumb,0,100,255,0);
-  pg.fill(red,green,0,127);
+  cursorCircle.fill(red,green,0,127);
 }

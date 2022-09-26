@@ -10,11 +10,11 @@ $(document).ready( function() {
 		// set the src attribute of the main image
 		$("#mainImg img").attr("src", path);
 
-		// make the border colour of all .thumb elements grey
-		$(".thumb").css("border-color", "#999");
+		// make the border colour of all .thumb elements wheat
+		$(".thumb").css("border-color", "wheat");
 
-		// make the border colour of the clicked on element pink
-		$(this).css("border-color", "black");
+		// make the border colour of the clicked on element blue
+		$(this).css("border-color", "#B3CAF5");
 
 	});
 
